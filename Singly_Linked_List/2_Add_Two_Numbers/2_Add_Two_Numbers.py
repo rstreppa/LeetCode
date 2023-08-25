@@ -30,6 +30,12 @@ class Solution(object):
         Output: [8,9,9,9,0,0,0,1]
         
         """
+
+
+        # 1 Create a dummy node at the start to maintain the head of the result linked list.
+        # 2 While iterating, create a new node for each sum and attach it to the last node of the result list.
+        # 3 At the end of the process, you'll return the next of the dummy node, which points to the start of the result linked list.
+     
         dummy = ListNode(0)  # Create a dummy node
         res = dummy  # Point 'res' to dummy node
         carry = 0
