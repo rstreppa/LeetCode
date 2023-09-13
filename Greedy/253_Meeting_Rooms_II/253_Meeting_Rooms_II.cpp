@@ -5,15 +5,13 @@
 
 using namespace std;
 
-bool compareIntervals(vector<int> a, vector<int> b) {
-    return a[0] < b[0];
-}
-
 int minMeetingRooms(vector<vector<int>>& intervals) {
     if (intervals.empty()) return 0;
     
-    // Sort intervals based on start time
-    sort(intervals.begin(), intervals.end(), compareIntervals);
+    // Sort intervals based on start time using a lambda function
+    sort(intervals.begin(), intervals.end(), [](const vector<int>& a, const vector<int>& b) -> bool {
+        return a[0] < b[0];
+    });
     
     // Priority queue to keep track of end times of meetings in rooms
     priority_queue<int, vector<int>, greater<int>> min_heap;
