@@ -28,7 +28,8 @@ class Solution(object):
 
         # Sliding Window: you should only increment i and decrement the count of the character at index i in the dictionary when a duplicate character is found. 
         # You should not move j forward in this case.
-      
+        #
+        #
         n = len(s)
         if n == 0:
             return 0
