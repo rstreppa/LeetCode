@@ -8,5 +8,5 @@ LeetCode problems, mostly on Algorithms and Data Structures and solved in Python
 Update 2023-09-23
 * Added a folder SQL50 with the 50 problems solved as SQL (MySQL) and pandas 
 
-Update 2023-09-23
+Update 2023-12-08
 * Added a folder HF with coding problems from Hedge Funds
